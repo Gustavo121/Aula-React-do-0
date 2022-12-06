@@ -31,13 +31,14 @@ export const Login = () => {
           label="Email"
           value={email}
           onChange={(newValue) => setEmail(newValue)}
-          //onPressEnter={() => inputPasswordRef.current?.focus()}
+          onPressEnter={() => inputPasswordRef.current?.focus()}
         />
 
         <InputLogin
           type="password"
           label="Senha"
           value={password}
+          ref={inputPasswordRef}
           onChange={(newValue) => setPassword(newValue)}
         />
 
