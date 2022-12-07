@@ -35,19 +35,17 @@ export const Login = () => {
           onPressEnter={() => inputPasswordRef.current?.focus()}
         />
 
-        <InputLogin
-          type="password"
+        <InputLogin        
           label="Senha"
+          type="password"          
           value={password}
           ref={inputPasswordRef}
           onChange={(newValue) => setPassword(newValue)}
         />
-
-        {/*<button type="button" onClick={handleEntrar}>
-          Entrar
-        </button>*/}
         
-        <ButtonLogin type="button" onClick={handleEntrar}/>      
+        <ButtonLogin type="button" onClick={handleEntrar}> 
+          Entrar
+        </ButtonLogin>     
       
       </form>
     </div>

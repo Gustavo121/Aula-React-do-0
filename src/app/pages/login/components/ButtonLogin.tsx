@@ -1,13 +1,13 @@
-
-
 interface IButtonLoginProps {
     onClick: () => void;
-    type?: "button" | "submit" | "reset";    
+    type?: "button" | "submit" | "reset"; 
+    
+    children: React.ReactNode;
 }
-export const ButtonLogin: React.FC<IButtonLoginProps> = ({ type, onClick }) => {
+export const ButtonLogin: React.FC<IButtonLoginProps> = ({ type, onClick, children }) => {
     return (
         <button type={type} onClick={onClick}>
-           Entrar
+          {children}
         </button>
     )
 }
